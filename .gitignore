@@ -1,0 +1,8 @@
+# sensitive file #
+##################
+settings.py
+
+###################
+# compiled source #
+###################
+*.pyc
