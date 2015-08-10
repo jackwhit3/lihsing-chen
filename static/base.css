@@ -1,0 +1,30 @@
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-weight: bold;
+  color: #005CB8;
+}
+
+.navbar-default .navbar-header > a {
+  color: #005CB8;
+}
+
+.jumbotron {
+  background-color: #005CB8;
+  border-radius: 0px;
+}
+
+.jumbotron h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.jumbotron small {
+  color: white;
+}
