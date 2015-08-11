@@ -10,7 +10,10 @@
     <!-- Bootstrap -->
     <link rel='stylesheet' href='{% static "css/bootstrap.css"%}'>
     <link rel='stylesheet' href='{% static "css/base.css"%}'>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <title>Lihsing-Chen.com</title>
+    <link rel="shortcut icon" type='image/png' href='{% static "website_logo.png"%}'>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,24 +33,25 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class='navbar-brand'>LHC</a>
+            <!--<a class='navbar-brand' href='/'><img src='{% static "website_logo.png"%}'/></a>-->
+              <a class='navbar-brand' href='/'>LHC</a>
             <!--<a class="navbar-brand" href="/"></a>
             -->
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">about</a></li>
-              <li><a href="#">projects</a></li>
-              <li><a href="#">linkedin</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="/projects/">projects</a></li>
+              <li><a href="/contact/">contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
     </header>
 
-    {% block home_content %}{% endblock %}
+    {% block home_content  %}{% endblock %}
+    {% block projects_content %}{% endblock %}
+    {% block contact_content %}{% endblock %}
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

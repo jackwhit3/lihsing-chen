@@ -1,3 +1,18 @@
+body{
+  overflow-y:scroll;
+}
+
+.container {
+  padding-right: 150px;
+  padding-left: 150px;
+}
+
+@media (max-width: 978px) {
+  .container {
+    padding: 10px 10px 10px 10px;
+  }  
+}
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -8,20 +23,27 @@
 
 .navbar-default .navbar-nav > li > a {
   font-weight: bold;
-  color: #005CB8;
+  color: #00bcdb;
+  font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .navbar-default .navbar-header > a {
-  color: #005CB8;
+  color: #00bcdb;
+  font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .jumbotron {
-  background-color: #005CB8;
+  background-color: #00bcdb;
   border-radius: 0px;
 }
 
 .jumbotron h1 {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.jumbotron p {
+
   color: white;
 }
 
@@ -29,6 +51,15 @@
   color: white;
 }
 
-.home-content p {
-  color: #005CB8;
+.home-content .page-header{
+  font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.home-content {
+  color: #344977;
+}
+
+.contact-content a {
+  color: #344977;
 }
