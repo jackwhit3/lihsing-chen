@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block contact_content %}
 	<div class='jumbotron'>
 	  <div class='container'>
@@ -8,10 +9,9 @@
 	</div>
   <div class='contact-content'>
   	<div class='container'>
-  		<ul>
-  			<li><a href='https://tw.linkedin.com/pub/li-hsing-chen/80/52b/2a9'><h2>LinkedIn</h2></a></li>
-  			<li><a href='https://github.com/jackwhit3'><h2>GitHub</h2></a></li>
-  		</ul>
+  		<a href='mailto:josh7910@gmail.com'><img height='140' width='140' src='{% static "gmail+icon.png"%}'/></a>
+			<a href='https://tw.linkedin.com/pub/li-hsing-chen/80/52b/2a9'><img src='{% static "In-2C-121px-R.png"%}'/></a>
+			<a href='https://github.com/jackwhit3'><img src='{% static "GitHub-Mark-120px-plus.png" %}'/></a>
   	</div>
   </div>
 {% endblock %}
