@@ -3,6 +3,11 @@ body{
   margin-bottom: 40px;
 }
 
+#bootstrap-override {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+
 .container {
   padding-right: 150px;
   padding-left: 150px;
@@ -21,43 +26,31 @@ body{
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-header > a {
-  font-weight: bold;
   color: #00bcdb;
-  font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .jumbotron {
   background-color: #00bcdb;
   border-radius: 0px;
-}
-
-.jumbotron h1 {
-  font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: white;
-}
-
-.jumbotron p {
   color: white;
 }
 
 .home-content h2 {
-  font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #00bcdb;
 }
 
 .home-content h3 {
-  font-family: 'Josefin Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: black;
+  color: #34495E;
 }
 
 .home-content {
   color: #606061;
 }
 
-.contact-content .container {
-  padding-top: 20px;
+.projects-content h3 {
+  color: #34495E;
 }
 
-.contact-content a {
-  color: #344977;
+.contact-content .container {
+  padding-top: 20px;
 }
