@@ -15,7 +15,7 @@
 		<a href="{{ post.get_absolute_url }}"><h2>{{ post.title }}</h2></a>
 		<small>{{ post.pub_date }}</small>
 		<hr>
-		<p>{{ post.body }}</p>
+		<p>{{ post.body|safe }}</p>
   {% endfor %}
 {% else %}
   <p>No posts are available.</p>
