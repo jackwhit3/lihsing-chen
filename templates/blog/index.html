@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block blog_content %}
+<div class='jumbotron'>
+  <div class='container'>
+    <h1>Blog</h1>
+    <p>.</p>
+  </div>
+</div>
+<div class='blog-content'>
+	<div class='container'>
+
+{% if latest_post_list %}
+  {% for post in latest_post_list %}
+		<a href="{{ post.get_absolute_url }}"><h2>{{ post.title }}</h2></a>
+		<small>{{ post.pub_date }}</small>
+		<hr>
+		<p>{{ post.body }}</p>
+  {% endfor %}
+{% else %}
+  <p>No posts are available.</p>
+{% endif %}
+
+	</div>
+</div>
+{% endblock %}
