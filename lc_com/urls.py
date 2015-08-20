@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^contact', TemplateView.as_view(template_name='contact.html')),
     url(r'^blog/', include('blog.urls')),
 	url(r'^ckeditor/', include('ckeditor.urls')),
-	url(r'^', TemplateView.as_view(template_name='home.html')),
+	url(r'^about', TemplateView.as_view(template_name='home.html')),
+    url(r'^', include('blog.urls')),
 ]
