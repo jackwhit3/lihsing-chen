@@ -35,10 +35,6 @@ body{
   color: white;
 }
 
-.jumbotron .jumbotron-hide {
-  visibility: hidden;
-}
-
 .home-content h2 {
   color: #00bcdb;
 }
