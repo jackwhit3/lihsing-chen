@@ -15,7 +15,12 @@
 		<a href="{{ post.get_absolute_url }}"><h2>{{ post.title }}</h2></a>
 		<small>{{ post.pub_date }}</small>
 		<hr>
-		<p>{{ post.body|safe }}</p>
+		<p>{{ post.body|safe|truncatewords:110 }}</p>
+      {% ifnotequal post.body|truncatewords_html:110|length post.body|truncatewords_html:111|length %}
+        <a href="{{ post.get_absolute_url }}"><p>Read more</p></a>
+      {% endifnotequal %}
+    <br>
+
   {% endfor %}
 {% else %}
   <p>No posts are available.</p>
